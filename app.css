@@ -6,10 +6,19 @@
 .feature-container {
     display: flex;
     flex-direction: row;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #f2f2f2;
 }  
+
+.middle-content {
+    flex-direction: row;
+    display: flex;
+    padding-top: 20px;
+    flex: 1;
+    justify-content: center;
+    background-color: #91FEED;
+}
 
 .header {
     background-color:#434343;
@@ -20,10 +29,14 @@
     justify-content: center;
 }
 
-.image-descriptor {
+.hand-image-descriptor {
     margin-bottom: 0px;
-    float: right;
     padding-left: 20px;
+}
+
+.hand-img {
+    width: 40%;
+    float: right;
 }
 
 .justify-center {
@@ -32,19 +45,6 @@
     justify-content: center;
 }
 
-.hand-img {
-    width: 40%;
-    float: right;
-}
-
-.content-middle {
-    flex-direction: row;
-    display: flex;
-    padding-top: 20px;
-    flex: 1;
-    justify-content: center;
-    background-color: #91FEED;
-}
 
 .rounded-button {
     border-radius: 20px;
@@ -112,12 +112,13 @@ a {
       padding-left: 0em;
       padding-right: 0em;
     }
-    .content-middle {
+    .middle-content {
         flex-direction: column;
       }
-    .image-descriptor {
+    .hand-image-descriptor {
         order: -1;
-        margin-bottom: 0px
+        padding-left: 10%;
+
     }
     .hand-img {
         padding: 0px;
